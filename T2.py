@@ -20,9 +20,9 @@ def mergeSort(coordenadas):
         der.append(coordenadas[i])
     sorted_izq = mergeSort(izq)
     sorted_der = mergeSort(der)
-    return combinar(sorted_izq, sorted_der)
+    return Comparar(sorted_izq, sorted_der)
 
-def combinar(PrimeraC, SegundaC):
+def Comparar(PrimeraC, SegundaC):
     if PrimeraC[0] <= 0 or PrimeraC[1] >= 0:
         return SegundaC
     if SegundaC[0] <= 0 or SegundaC[1] >= 0:
